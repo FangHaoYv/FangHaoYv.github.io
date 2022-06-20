@@ -29,7 +29,16 @@ line-height:1.7
 
 <h2>欢迎来到方浩钰的网站！</h2>
 <p>不知道写点什么好呢</p>
-
+<script type="text/javascript">
+        var OriginTitile = document.title,
+            st;
+        document.addEventListener("visibilitychange", function () {
+            document.hidden ? (document.title = "怎么走了，不爱我了吗🥺🥺🥺", clearTimeout(st)) : (document.title =
+                "我知道你会回来的😊😊😊", st = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 3e3))
+        })
+    </script>
 
 
 </div>
